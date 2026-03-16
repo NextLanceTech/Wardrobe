@@ -1,0 +1,192 @@
+/* components/CTASection.css */
+.cta-section {
+  padding: 6rem 4rem;
+  background: linear-gradient(135deg, var(--primary) 0%, #2a2a2a 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(198, 168, 127, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.cta-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cta-title {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.cta-subtitle {
+  font-size: 1.3rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  opacity: 0.9;
+}
+
+.cta-features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.cta-feature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  background: var(--secondary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+.btn-large {
+  padding: 1.2rem 3rem;
+  font-size: 1.1rem;
+}
+
+.cta-app-previews {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.app-preview {
+  width: 200px;
+  height: 400px;
+  background: #1a1a1a;
+  border-radius: 40px;
+  padding: 0.5rem;
+  border: 2px solid var(--secondary);
+  position: relative;
+}
+
+.preview-screen {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 35px;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.preview-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-badge {
+  background: var(--secondary);
+  color: white;
+  padding: 0.2rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.7rem;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.preview-heatmap {
+  flex: 1;
+  background: linear-gradient(135deg, #ff6b6b 0%, #51cf66 50%, #ffd43b 100%);
+  border-radius: 10px;
+}
+
+.preview-ar {
+  flex: 1;
+  background: linear-gradient(135deg, #9775fa, #d0bfff);
+  border-radius: 10px;
+}
+
+.preview-calendar {
+  flex: 1;
+  background: var(--primary);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.preview-calendar::before {
+  content: 'Wedding';
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  color: white;
+}
+
+.preview-calendar::after {
+  content: 'Meeting';
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem;
+  border-radius: 3px;
+  font-size: 0.6rem;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .cta-section {
+    padding: 4rem 2rem;
+  }
+
+  .cta-title {
+    font-size: 2.5rem;
+  }
+
+  .cta-subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .app-preview {
+    width: 150px;
+    height: 300px;
+  }
+}

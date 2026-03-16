@@ -1,0 +1,174 @@
+/* components/BoutiqueShowcase.css */
+.boutique-showcase {
+  padding: 6rem 4rem;
+  background: white;
+}
+
+.boutique-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.boutique-title {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.boutique-title-highlight {
+  color: var(--secondary);
+  display: block;
+}
+
+.boutique-subtitle {
+  font-size: 1.2rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.boutique-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.boutique-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid var(--medium-gray);
+}
+
+.boutique-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: var(--secondary);
+}
+
+.boutique-image {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.boutique-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.boutique-card:hover .boutique-image img {
+  transform: scale(1.1);
+}
+
+.boutique-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--secondary);
+  color: white;
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.boutique-info {
+  padding: 1.5rem;
+}
+
+.boutique-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: var(--primary);
+}
+
+.boutique-info p {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.boutique-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.boutique-items {
+  color: var(--dark-gray);
+}
+
+.boutique-rating {
+  color: #ffd43b;
+  font-weight: 600;
+}
+
+.boutique-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: transparent;
+  border: 2px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.boutique-btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.boutique-cta {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-card {
+  background: linear-gradient(135deg, var(--primary), #2a2a2a);
+  color: white;
+  padding: 3rem;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.cta-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-card p {
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+@media (max-width: 1024px) {
+  .boutique-showcase {
+    padding: 4rem 2rem;
+  }
+
+  .boutique-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .boutique-title {
+    font-size: 2rem;
+  }
+
+  .cta-card {
+    padding: 2rem;
+  }
+
+  .cta-card h3 {
+    font-size: 1.5rem;
+  }
+}
