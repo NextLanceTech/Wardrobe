@@ -1,4 +1,3 @@
-/* components/HowItWorks.css */
 .how-it-works {
   padding: 6rem 4rem;
   background: var(--light-gray);
@@ -115,7 +114,6 @@
   justify-content: center;
 }
 
-/* Digital Twin Demo */
 .demo-digital-twin {
   width: 100%;
 }
@@ -202,7 +200,6 @@
   color: var(--primary);
 }
 
-/* AR Demo */
 .demo-ar {
   width: 100%;
 }
@@ -241,7 +238,6 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Backup Size Demo */
 .demo-backup {
   display: flex;
   flex-direction: column;
@@ -289,7 +285,6 @@
   font-weight: 600;
 }
 
-/* Delivery Demo */
 .demo-delivery {
   width: 100%;
   display: flex;
@@ -313,7 +308,6 @@
   border: none;
 }
 
-/* QR Demo */
 .demo-qr {
   width: 100%;
 }
@@ -350,7 +344,6 @@
   color: var(--dark-gray);
 }
 
-/* Return Demo */
 .demo-return {
   width: 100%;
 }
@@ -450,4 +443,33 @@
   .timeline-step {
     flex: 0 0 calc(50% - 0.5rem);
   }
+}
+
+/* components/HowItWorks.css */
+.demo-action-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.demo-action-btn:hover {
+  background: var(--primary);
+  transform: translateY(-2px);
+}
+
+.size-card, .delivery-option, .locker-location, .qr-scan-preview, .ar-btn {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-card:hover, .delivery-option:hover, .locker-location:hover, .qr-scan-preview:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }

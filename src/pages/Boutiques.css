@@ -429,3 +429,58 @@
     flex-direction: column;
   }
 }
+
+.follow-btn.followed {
+  background: var(--primary);
+  color: white;
+}
+
+.follow-btn.followed:hover {
+  background: var(--secondary);
+}
+
+.collection-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  background: var(--secondary);
+  color: white;
+}
+
+.collection-card:hover p {
+  color: white;
+}
+
+.featured-item .rent-btn {
+  width: 100%;
+  padding: 0.5rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.featured-item .rent-btn:hover {
+  background: var(--primary);
+}
+
+.explore-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: var(--primary);
+}
